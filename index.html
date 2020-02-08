@@ -14,6 +14,23 @@
 
      a imagen que aparecera cuano comparta la pagina web
      <meta property="og:image" content="aqui va la imagen " />
+
+
+     <!-- etiqueta para twitter -->
+<!-- sumary x k es un resumen -->
+     <meta name="twitter:card" content="summary" />
+
+     <!-- es para los usuarios de facebook @jhonatanmaquera -->
+<meta name="twitter:site" content="@flickr" />
+
+<!-- hace referencia al titulo de mi pagina web -->
+<meta name="twitter:title" content="aves de presa 2020" />
+
+<!-- aremos descripcion del sitio web -->
+<meta name="twitter:description" content="sinopsis acerca de la pelicula birds of prey" />
+
+<!-- hace referencia a la imagen relacionada con el sitio, tieneque ser una url -->
+<meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
      <title>Pelicula - Birds of Prey</title>
 </head>
 <body>
@@ -28,10 +45,44 @@
                    <h2>aves de presa</h2>
                    <h5>birds of prey</h5>
                    <div class="fb-share-button" data-href="https://jhomaco.github.io/opengraph/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjhomaco.github.io%2Fopengraph%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
-                   
+
                    <p>birds of prey pelicula del universo DC donde el personaje harley quinn toma protagonismo despues de su ruptura con el joker</p>
+
+                   <!-- boton de facebook -->
+                   <div class="fb-share-button" data-href="https://jhomaco.github.io/opengraph/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjhomaco.github.io%2Fopengraph%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+
+
+
+                   <!-- boton de twitter -->
+                    <a class="twitter-share-button"
+                    href="https://twitter.com/intent/tweet"
+                    data-size="large"
+                    data-text="custom share text"
+                    data-url="https://dev.twitter.com/web/tweet-button"
+                    data-hashtags="example,demo"
+                    data-via="twitterdev"
+                    data-related="twitterapi,twitter">
+                    Tweet
+                    </a>
               </article>
          </section>
     </main> 
+    <!-- script de twitter -->
+    <script>window.twttr = (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0],
+       t = window.twttr || {};
+     if (d.getElementById(id)) return t;
+     js = d.createElement(s);
+     js.id = id;
+     js.src = "https://platform.twitter.com/widgets.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   
+     t._e = [];
+     t.ready = function(f) {
+       t._e.push(f);
+     };
+   
+     return t;
+   }(document, "script", "twitter-wjs"));</script>
 </body>
 </html>
